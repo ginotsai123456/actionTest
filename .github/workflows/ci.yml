@@ -20,5 +20,8 @@ jobs:
     - name: Build
       run: make
 
-    - name: Run
-      run: ./hello
+    - name: Upload executable
+      uses: actions/upload-artifact@v4
+      with:
+        name: hello-program
+        path: ./hello  # 上傳編譯後的可執行文件
