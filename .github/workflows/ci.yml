@@ -10,7 +10,7 @@ jobs:
   build-and-run:
     runs-on: ubuntu-latest  # 主機環境仍是最新版
     container:
-      image: ubuntu:18.04  # 在容器內運行舊版系統
+      image: ubuntu:20.04  # 在容器內運行舊版系統
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
